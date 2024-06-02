@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMarks</title>
+    <link rel="icon" href="iamges/bookmark.png" />
+
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <section class="Bookmarker ">
+        <div class="container position-relative ">
+            <div class="Head">
+                <h1 class="text-center position-relative  ">Bookmarker </h1>
+            </div>
+            <div class=" position-relative inputs-div  ">
+                <div class="book-icon">
+                    <h2 class="text-center">
+                        <i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites
+                        <i class="fa-solid fa-bookmark"></i>
+                    </h2>
+                </div>
+                <div class="mb-3 ">
+                    <label for="SiteName" class="form-label  "> <i class="fa-solid fa-book-bookmark"></i> Site
+                        Name</label>
+                    <input type="text" oninput="validateInput(this)" class="form-control w-100p " id="SiteName"
+                        placeholder="Bookmark Name">
+                    <div class="alert alert-danger d-none p-1">
+                        <small></small>
+                    </div>
+
+                </div>
+                <div class="mb-3">
+                    <label for="SiteUrl" class="form-label"><i class="fa-solid fa-link"></i> Site Url</label>
+                    <input type="url" oninput="validateInput(this)" class="form-control " id="SiteUrl"
+                        placeholder="Website URL">
+
+                </div>
+
+
+                <div class=" d-flex justify-content-center  align-items-center BT_div">
+                    <button id="submit" onclick="addBookmarker()" class="btn Btn-Add">Submit</button>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="container ">
+            <div class="row bo-add ">
+                <div class="col-2  text-capitalize text-center">
+                    <h2> Index </h2>
+                </div>
+                <div class="col-4  text-capitalize text-center">
+                    <h2> Website Name</h2>
+                </div>
+                <div class="col-3  text-capitalize text-center">
+                    <h2> Visit </h2>
+                </div>
+                <div class="col-3  text-capitalize text-center">
+                    <h2> Delete </h2>
+                </div>
+
+
+                <div id="MyRow">
+
+                </div>
+            </div>
+
+            <div id="box-pop" class="box-pop-up d-none ">
+                <div class="box-con bg-light ">
+                    <div class="head bg-light d-flex justify-content-between  w-100 ">
+
+                        <div class="d-flex">
+                            <span class="red-icon"><i class="fa-solid fa-circle"></i></span>
+                            <span class="yellow-icon "><i class="fa-solid fa-circle "></i></span>
+                            <span class=" green-icon "><i class="fa-solid fa-circle"></i></span>
+
+
+                        </div>
+
+                        <button type="button" id="closeBtn" class="btn-close " aria-label="Close"></button>
+                    </div>
+
+                        <p class="site-invalid  p-3 ">
+                            Site Name or Url is not valid, Please follow the rules below :
+                        </p>
+
+                        <ul class="rules-regex">
+                            <li>
+                                <i class="fa-regular fa-circle-right p-2"></i>Site name must contain at least 3 characters
+
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-right p-2"></i>Site URL must be a
+                                valid one
+                            </li>
+                        </ul>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+    <script src="Js/main.js"></script>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

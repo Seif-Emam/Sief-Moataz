@@ -1,0 +1,254 @@
+.Bookmarker{
+    background-color: #F7ECDE;
+    height: 100vh;
+}
+
+.Bookmarker .Btn-Add{
+background-color: #BB4120;
+padding: 5px 50px;
+color: white;
+position: absolute;
+ 
+}
+ 
+.BT_div{
+    margin-bottom: 50px;
+    padding-top: 20px;
+}
+.inputs-div{
+
+            padding: 10px 0;
+        border-top: 2px dotted #352e28;
+        border-bottom: 2px dotted #352e28;
+    }
+
+    .Head {
+        display: flex;
+        justify-content: center; /* Horizontally centers the content */
+        align-items: center;
+    }
+    
+
+.Bookmarker h1{
+    padding-top: 50px;
+    font-family: Pacifico, cursive ;
+
+    size: 50px;
+    color: rgb(53, 46, 40) ;
+    font-weight: 500;
+    line-height: 60px;
+        font-style: normal;
+        text-decoration-style: dashed;
+        z-index: 1;
+
+         
+    }
+
+.Bookmarker .Btn-Add:hover{
+ color: black;
+ background-color: #BB4120;
+
+
+}
+
+ 
+
+
+
+
+
+.inputs-div {
+    margin-block: 7%;
+}
+
+
+
+.Bookmarker .book-icon h2{
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-text-fill-color: transparent;
+
+    -webkit-background-clip: text;
+
+    font-weight: 500;
+      font-size: 25px;
+      line-height: 30px;
+      font-family: Righteous, cursive
+      ;
+  
+}
+
+
+ .Bookmarker h1::before {
+        content: "";
+        background-color: #fec260;
+
+        position: absolute;
+        width: 100%;
+        height: 15%;
+        left: 0;
+        bottom: 12px;
+       z-index: -1;
+            transition: .3s;
+        
+}
+
+ .Bookmarker h1:hover::before {
+    height: 30%;
+    
+
+}
+
+
+.bo-add{
+    background-color: aliceblue; 
+     margin: 10%;
+}
+
+.bo-add h2{
+font-family:"PT Sans Caption", sans-serif;
+ font-weight: 700;
+ font-size: 19px;
+ line-height: 24px;
+ color: rgb(33, 37, 41)
+ ;
+ padding: 10px 0px;
+
+}
+
+
+
+
+.Div-Operation{
+ 
+    border-top: 1px #ebeef09c solid;
+    border-bottom: 1px #ebeef09c solid;
+     padding: 1px 0;
+ 
+
+}
+
+
+.Div-Operation h2{
+
+
+    font-family: "PT Sans Caption", sans-serif
+    ;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+     color: rgb(33, 37, 41)
+     ;
+}
+
+.Div-Operation .Link{
+
+    text-decoration: none;
+    background-color: #8A9E23;
+    padding: 8px 15px;
+    color: white;
+}
+
+.Div-Operation .Link:hover{
+    background-color: #6f801c ;
+    color: white;
+
+
+}
+.Div-Operation .delete{
+    color: white;
+    padding: 8px 15px;
+    background-color: #D30820;
+
+
+ 
+}
+
+.Div-Operation .delete:hover{
+    background-color: #a30618 ;
+    color: white;
+
+}
+
+.box-pop-up{
+ 
+    position: absolute;
+    top: 0%;
+    left: 0%;
+
+    height: 100vh
+    ;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+   background-color: #0007;
+   z-index: 1;
+   
+
+}
+
+.box-con{
+
+width: 500px;
+
+
+}
+span{
+    padding-inline: 5px;
+}
+
+.red-icon i{
+
+    color: #F15F5D;
+}
+
+.green-icon i{
+
+    color: #4DB748;
+}
+.yellow-icon i{
+
+color: #FEBE2E;
+
+}
+
+.site-invalid{
+font-family: "Bree Serif", serif
+;
+
+font-weight: 700;
+line-height: 27px;
+  color: rgb(53, 46, 40)
+  ;
+  font-size: 21px;
+
+  padding: 10px  0px 15px 0px;
+
+
+}
+
+ul{
+
+text-decoration: none;
+list-style: none;
+
+}
+
+ul li{
+      
+    font-size: 18px
+}
+
+
+ul li i{
+    color: #F15F5D;
+
+}
+
+
+.head{
+    padding-top: 10px;
+    
+    
+}
